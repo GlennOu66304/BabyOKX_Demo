@@ -1,6 +1,6 @@
 <template>
   <!-- nav bar -->
-    <nav class="header">
+    <nav class="header" style="position:absolute; z-index:2;">
       <!-- logo -->
       <div class="logo" v-scroll-to="'#home'">
         <img src="../assets/logo.jpg" alt="" />
@@ -8,13 +8,16 @@
       </div>
       <ul class="links">
         <li v-scroll-to="'#about-us'">
-          <h1>关于我们</h1>
+          <h6>关于我们</h6>
+        </li>
+          <li v-scroll-to="'#nft'">
+          <h6>NFT</h6>
         </li>
         <li v-scroll-to="'#roadmap'">
-          <h1>路线图</h1>
+          <h6>路线图</h6>
         </li>
         <li v-scroll-to="'#faq'">
-          <h1>常见问题</h1>
+          <h6>常见问题</h6>
         </li>
       </ul>
       <div class="language">简体中文</div>
@@ -34,6 +37,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
+  color: white;
 }
 nav {
   display: flex;

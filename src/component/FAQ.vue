@@ -10,6 +10,7 @@ export default {
 
 <style>
 #faq {
-  background-color: goldenrod;
+  color:white;
+ 
 }
 </style>

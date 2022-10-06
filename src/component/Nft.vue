@@ -1,5 +1,5 @@
 <template>
-  <div class="nft">
+  <div class="nft" id="nft">
     <h2>NFT</h2>
 
     <swiper
@@ -68,6 +68,10 @@ export default {
 </script>
 
 <style scoped>
+.nft{
+  background-color:#100b29;
+  color:white;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;

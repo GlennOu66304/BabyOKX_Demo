@@ -10,6 +10,8 @@ export default {
 
 <style>
 #roadmap {
-  background-color: gray;
+  /* background-color: gray; */
+  color:white;
+
 }
 </style>

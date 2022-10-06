@@ -49,8 +49,9 @@ export default {
 
 <style>
 #footer {
-  height: 80vh;
+
   /* background-color: gold; */
+  color:white;
 }
 .contract {
   display: flex;

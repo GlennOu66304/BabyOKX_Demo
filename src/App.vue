@@ -1,19 +1,38 @@
 <template>
+
   <div id="app">
-    <Header/>
-    <!-- home -->
-    <Home />
-    <!-- 关于我们 -->
-    <About />
-    <!-- NFT -->
-    <Nft />
-    <!-- 路线图 -->
-    <RoadMap />
-    <!-- 常见问题 -->
-    <FAQ />
-    <!-- footer -->
-    <Footer />
+    <Header />
+ 
+     <b-container class="bv-example-row" fluid>
+      <b-row>
+        <!-- home -->
+        <Home />
+        </b-row> 
+
+        <b-row>
+        <!-- 关于我们 -->
+        <About />
+      </b-row>
+      <!-- NFT -->
+
+      <b-row>
+        <Nft />
+      </b-row>
+      <b-row>
+        <!-- 路线图 -->
+        <RoadMap class="road-map"/>
+      </b-row>
+      <b-row class="FAQ">
+        <!-- 常见问题 -->
+        <FAQ />
+      </b-row>
+      <b-row>
+        <!-- footer -->
+        <Footer class="footer"/>
+      </b-row>
+   </b-container>
   </div>
+   
 </template>
 
 <script>
@@ -26,7 +45,7 @@ import FAQ from "./component/FAQ.vue";
 import Footer from "./component/Footer.vue";
 export default {
   name: "App",
-  components: { Header,Home, About, Nft, RoadMap, FAQ, Footer },
+  components: { Header, Home, About, Nft, RoadMap, FAQ, Footer },
 };
 </script>
 
@@ -35,12 +54,28 @@ body {
   font-family: sans-serif;
   background-color: black;
   color: white;
+  scrollbar-width:none
+  /* overflow:-Scroll;
+  overflow-y:hidden */
 }
 
 /* margin-top: 30px; */
 
 /* section */
 .section {
-   /* height: 80vh; */
+  height: 1012px;
+}
+.aboutus{
+  background-image: url(./assets/home-bg.png);
+  color:white;
+}
+.road-map{
+  background-color: #1b1d56;
+}
+.FAQ{
+  background-color:#1b1d56;
+}
+.footer{
+  background-image: url(./assets/footer_02.jpg);
 }
 </style>
